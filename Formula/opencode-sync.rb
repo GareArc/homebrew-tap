@@ -5,21 +5,21 @@
 class OpencodeSync < Formula
   desc "Sync OpenCode configurations across machines via Git with optional encryption"
   homepage "https://github.com/GareArc/opencode-sync"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/GareArc/opencode-sync/releases/download/v0.1.6/opencode-sync_0.1.6_darwin_amd64.tar.gz"
-      sha256 "dfb0feaeff01b2b5c9e6c2d654420ad50bed7e0c569ed7b2511296eabe6903c5"
+      url "https://github.com/GareArc/opencode-sync/releases/download/v0.1.7/opencode-sync_0.1.7_darwin_amd64.tar.gz"
+      sha256 "2bfaf3a8413743d9b4d45fa449ea51de95d76fbae69489308e5405372d943394"
 
       def install
         bin.install "opencode-sync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/GareArc/opencode-sync/releases/download/v0.1.6/opencode-sync_0.1.6_darwin_arm64.tar.gz"
-      sha256 "174159955170dde0ce60bc415f7e6dba104e484bd295645ebfb3497c24b18cb0"
+      url "https://github.com/GareArc/opencode-sync/releases/download/v0.1.7/opencode-sync_0.1.7_darwin_arm64.tar.gz"
+      sha256 "c14f3b4fcda93036e3f677da8552838d9b9af1820a4ee4c3ca52b8d7f8e5aafa"
 
       def install
         bin.install "opencode-sync"
@@ -29,15 +29,15 @@ class OpencodeSync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GareArc/opencode-sync/releases/download/v0.1.6/opencode-sync_0.1.6_linux_amd64.tar.gz"
-      sha256 "ed8ffa53b811ebe5833641be7bb3e8ac23e06fc0c6119a0360b2d9acfd44fdba"
+      url "https://github.com/GareArc/opencode-sync/releases/download/v0.1.7/opencode-sync_0.1.7_linux_amd64.tar.gz"
+      sha256 "b066a84db40c761faa48a8bdb669c7677c6cb3d1f94c2abcc1f21af7f93e3d81"
       def install
         bin.install "opencode-sync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GareArc/opencode-sync/releases/download/v0.1.6/opencode-sync_0.1.6_linux_arm64.tar.gz"
-      sha256 "722ea4d1b6c0bd4014e775b9f534c2d1c56b26f5b58bd1aa06498f307d93347d"
+      url "https://github.com/GareArc/opencode-sync/releases/download/v0.1.7/opencode-sync_0.1.7_linux_arm64.tar.gz"
+      sha256 "2d688897bb4bf72602759b803c72ccbfdb82f26637e75097fdf9905d9c6d3231"
       def install
         bin.install "opencode-sync"
       end
